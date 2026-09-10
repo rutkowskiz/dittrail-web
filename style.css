@@ -232,6 +232,21 @@ body {
     border-top: 1px solid rgba(129, 200, 238, 0.10);
 }
 
+.creator-link {
+    display: inline-block;
+}
+
+.creator-link:hover .creator-logo {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.creator-logo {
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
 .creator-logo {
     width: 112px;
     height: 112px;
