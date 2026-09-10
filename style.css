@@ -2,100 +2,335 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    margin: 0;
-    min-height: 100%;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at 50% 18%, rgba(24, 104, 170, 0.22), transparent 34%),
+        radial-gradient(circle at 50% 55%, rgba(0, 170, 255, 0.07), transparent 35%),
+        linear-gradient(180deg, #07111d 0%, #050b13 65%, #03070c 100%);
+
+    color: #f4f8ff;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background:
-        radial-gradient(circle at 50% 30%, #182436 0%, #0b111a 45%, #05080d 100%);
-
-    color: #f5f7fa;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-
-.hero {
-    width: min(900px, 90vw);
+    padding: 70px 24px 50px;
     text-align: center;
-    padding: 60px 30px;
 }
 
-.morse {
-    margin-bottom: 24px;
-
-    color: #7fd0ff;
-    font-size: 20px;
-    letter-spacing: 10px;
-    opacity: 0.75;
+.hero-content {
+    width: min(820px, 100%);
 }
 
-h1 {
+.dittrail-symbol {
+    width: min(320px, 62vw);
+    height: auto;
+
+    display: block;
+    margin: 0 auto 24px;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 0 10px rgba(0, 183, 255, 0.20))
+        drop-shadow(0 0 24px rgba(0, 119, 255, 0.10));
+}
+
+.brand {
     margin: 0;
 
-    font-size: clamp(64px, 10vw, 120px);
+    font-size: clamp(72px, 10vw, 124px);
     font-weight: 700;
-    letter-spacing: -4px;
-    line-height: 1;
+    line-height: 0.95;
+    letter-spacing: -5px;
 }
 
-.dit {
+.brand-dit {
     color: #ffffff;
 }
 
-.trail {
-    color: #63c7ff;
+.brand-trail {
+    background: linear-gradient(
+        90deg,
+        #70d8ff 0%,
+        #18bfff 45%,
+        #0d7eff 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .tagline {
+    margin: 25px 0 0;
+
+    color: #a9dfff;
+    font-size: clamp(21px, 3vw, 30px);
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.journey {
     margin: 18px 0 0;
 
-    color: #b8c5d1;
-    font-size: clamp(20px, 3vw, 30px);
-    font-weight: 300;
-    letter-spacing: 2px;
+    color: #eef7ff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+
+    opacity: 0.88;
 }
 
 .description {
-    max-width: 660px;
-    margin: 38px auto 0;
+    max-width: 690px;
+    margin: 42px auto 0;
 
-    color: #98a7b7;
+    color: #94a9bb;
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.75;
 }
 
-.coming-soon {
+.status {
     display: inline-block;
+
     margin-top: 46px;
     padding: 12px 24px;
 
-    border: 1px solid rgba(99, 199, 255, 0.45);
+    border: 1px solid rgba(73, 195, 255, 0.38);
     border-radius: 999px;
 
-    color: #8bd7ff;
-    font-size: 14px;
+    background: rgba(33, 160, 224, 0.07);
+
+    color: #82d7ff;
+
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
 
-    background: rgba(99, 199, 255, 0.06);
+    box-shadow:
+        0 0 28px rgba(0, 157, 255, 0.05),
+        inset 0 0 18px rgba(0, 157, 255, 0.03);
 }
 
-.author {
-    margin-top: 44px;
 
-    color: #667789;
-    font-size: 14px;
+/* =========================
+   FEATURES
+   ========================= */
+
+.features {
+    width: min(1080px, calc(100% - 48px));
+
+    margin: 0 auto;
+    padding: 55px 0 110px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    border-top: 1px solid rgba(129, 200, 238, 0.12);
+}
+
+.feature {
+    padding: 34px 30px;
+
+    text-align: center;
+
+    border: 1px solid rgba(104, 189, 235, 0.10);
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(17, 42, 65, 0.38),
+            rgba(7, 17, 28, 0.18)
+        );
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(87, 200, 255, 0.25);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(19, 53, 80, 0.48),
+            rgba(7, 17, 28, 0.22)
+        );
+}
+
+.feature-symbol {
+    min-height: 44px;
+
+    margin-bottom: 16px;
+
+    color: #55ccff;
+    font-size: 33px;
+    font-weight: 300;
+    letter-spacing: 8px;
+
+    text-shadow: 0 0 18px rgba(42, 190, 255, 0.22);
+}
+
+.feature h2 {
+    margin: 0;
+
+    color: #f7fbff;
+
+    font-size: 24px;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
-.author strong {
-    color: #8ea0b2;
+.feature p {
+    margin: 15px auto 0;
+
+    color: #8fa5b8;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CREATOR
+   ========================= */
+
+.creator {
+    width: min(720px, calc(100% - 48px));
+
+    margin: 0 auto 90px;
+    padding-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 1px solid rgba(129, 200, 238, 0.10);
+}
+
+.creator-logo {
+    width: 112px;
+    height: 112px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    opacity: 0.92;
+
+    filter: drop-shadow(0 0 18px rgba(0, 130, 255, 0.12));
+}
+
+.creator-text {
+    margin-top: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.creator-text span {
+    color: #667b8e;
+
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.creator-text strong {
+    margin-top: 7px;
+
+    color: #d8e8f5;
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    padding: 26px 20px 34px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(129, 200, 238, 0.07);
+}
+
+footer p {
+    margin: 0;
+
+    color: #465c70;
+
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 760px) {
+
+    .hero {
+        min-height: auto;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .dittrail-symbol {
+        width: min(270px, 72vw);
+    }
+
+    .brand {
+        font-size: clamp(60px, 20vw, 88px);
+        letter-spacing: -3px;
+    }
+
+    .tagline {
+        letter-spacing: 3px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+
+    .feature {
+        padding: 30px 24px;
+    }
 }
