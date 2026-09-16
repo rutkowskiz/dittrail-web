@@ -33,6 +33,43 @@ body {
     text-align: center;
 }
 
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.language-button {
+    width: 44px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(104, 189, 235, 0.16);
+    border-radius: 10px;
+    background: rgba(10, 28, 44, 0.44);
+    color: inherit;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.66;
+    transition: opacity 0.18s ease, transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.language-button:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+    border-color: rgba(102, 218, 255, 0.46);
+}
+
+.language-button.active {
+    opacity: 1;
+    border-color: rgba(83, 205, 255, 0.62);
+    background: rgba(25, 92, 133, 0.28);
+    box-shadow: 0 0 18px rgba(0, 157, 255, 0.08);
+}
+
 .brand-link {
     display: inline-flex;
     flex-direction: column;
@@ -273,7 +310,11 @@ footer a:hover {
     }
 
     .demo-hero {
-        padding-top: 48px;
+        padding-top: 36px;
+    }
+
+    .language-switcher {
+        margin-bottom: 18px;
     }
 
     .brand {
