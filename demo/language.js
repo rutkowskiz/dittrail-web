@@ -44,7 +44,7 @@ const translations = {
         quickCheatSheet: "Po prawej stronie ekranu, pod przyciskiem <kbd>?</kbd>, możesz włączyć lub wyłączyć wbudowaną ściągę z alfabetu Morse'a.",
         quickAudioCue: "Naciśnij znak na klawiaturze aby usłyszeć jak powinien zabrzmieć.",
         lastThingTitle: "Na koniec",
-        lastThingText: "Ta strona służy do wygodnego udostępniania aktualnej wersji i pokazywania kilku ciekawskim operatorom, w jakim kierunku rozwija się projekt.",
+        lastThingText: "To jeszcze nie jest oficjalne wydanie DitTrail. Ta strona służy do wygodnego udostępniania aktualnej wersji i pokazywania kilku ciekawskim operatorom, w jakim kierunku rozwija się projekt.",
         backLink: "← Powrót do dittrail.com"
     }
 };
