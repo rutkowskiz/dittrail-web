@@ -252,10 +252,12 @@ h1 {
 }
 
 .quick-list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    margin-top: 12px;
+    margin: 14px 0 0;
+    padding-left: 22px;
+}
+
+.quick-list li + li {
+    margin-top: 8px;
 }
 
 kbd {
@@ -327,11 +329,6 @@ footer a:hover {
 
     .wide-card {
         grid-column: auto;
-    }
-
-    .quick-list {
-        grid-template-columns: 1fr;
-        gap: 4px;
     }
 
     footer {
