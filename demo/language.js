@@ -4,6 +4,7 @@ const translations = {
         eyebrow: "EARLY DEVELOPMENT PREVIEW",
         lead: "This is a very early build shared with friends and testers while DitTrail is still taking shape. Expect unfinished areas, changing behaviour and the occasional rough edge.",
         stateLabel: "WHAT WORKS RIGHT NOW",
+        stateSections: "Practice · Settings",
         stateText: "At this stage only the Practice and Settings sections are functional. The rest is still under construction.",
         downloadButton: "Download DitTrail Demo",
         demoInfoAria: "Demo information",
@@ -25,9 +26,10 @@ const translations = {
     pl: {
         backHomeAria: "Powrót na stronę główną DitTrail",
         eyebrow: "WCZESNA WERSJA ROZWOJOWA",
-        lead: "To bardzo wczesna wersja DitTrail, udostępniona znajomym i testerom jeszcze w trakcie intensywnego rozwoju programu. Część elementów jest niedokończona, zachowanie aplikacji może się zmieniać, a od czasu do czasu może trafić się coś szorstkiego na krawędziach.",
+        lead: "To bardzo wczesna wersja DitTrail, udostępniona znajomym i testerom jeszcze w trakcie rozwoju programu. Część elementów jest niedokończona, zachowanie aplikacji może się zmieniać, a od czasu do czasu może trafić się coś niedopracowanego.",
         stateLabel: "CO DZIAŁA OBECNIE",
-        stateText: "Na tym etapie działają tylko zakładki Practice i Settings. Pozostałe części programu są jeszcze w budowie.",
+        stateSections: "Trening · Ustawienia",
+        stateText: "Na tym etapie działają tylko zakładki Trening i Ustawienia. Pozostałe części programu są jeszcze w budowie.",
         downloadButton: "Pobierz DitTrail Demo",
         demoInfoAria: "Informacje o wersji demonstracyjnej",
         requirementsTitle: "Wymagania",
@@ -42,7 +44,7 @@ const translations = {
         quickCheatSheet: "Po prawej stronie ekranu, pod przyciskiem <kbd>?</kbd>, możesz włączyć lub wyłączyć wbudowaną ściągę z alfabetu Morse'a.",
         quickAudioCue: "Naciśnij dowolny znak na klawiaturze, aby usłyszeć jego <strong>podpowiedź CW</strong> — krótką dźwiękową wskazówkę z kodem Morse'a dla wybranego znaku.",
         lastThingTitle: "Na koniec",
-        lastThingText: "To jeszcze nie jest oficjalne wydanie DitTrail. Ta strona służy po prostu do wygodnego udostępniania aktualnej wersji, zbierania uwag i pokazywania kilku ciekawskim operatorom, w jakim kierunku rozwija się projekt.",
+        lastThingText: "To jeszcze nie jest oficjalne wydanie DitTrail. Ta strona służy do wygodnego udostępniania aktualnej wersji i pokazywania kilku ciekawskim operatorom, w jakim kierunku rozwija się projekt.",
         backLink: "← Powrót do dittrail.com"
     }
 };
