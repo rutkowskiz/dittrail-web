@@ -34,17 +34,17 @@ const translations = {
         demoInfoAria: "Informacje o wersji demonstracyjnej",
         requirementsTitle: "Wymagania",
         requirementsWindows: "Wymagany jest <strong>Windows 10 lub Windows 11</strong>.",
-        requirementsResolution: "Zalecana jest rozdzielczość <strong>Full HD (1920 × 1080)</strong>. Na mniejszych rozdzielczościach ta wczesna wersja może skalować się nieprawidłowo — tutaj jeszcze niczego nie obiecuję. 🙂",
+        requirementsResolution: "Zalecana jest rozdzielczość <strong>Full HD (1920 × 1080)</strong>. Na mniejszych rozdzielczościach ta wczesna wersja może skalować się nieprawidłowo — nie przyjmuję reklamacji. 🙂",
         installationTitle: "Instalacja",
         installation1: "Pobierz plik <strong>DitTrailPublish.zip</strong>.",
         installation2: "Rozpakuj całe archiwum ZIP do dowolnego folderu na komputerze.",
         installation3: "Otwórz rozpakowany folder i uruchom znajdujący się w nim plik <strong>.exe</strong>.",
         quickStartTitle: "Szybki start",
-        quickKey: "<strong>Fizyczny klucz nie jest potrzebny.</strong> Do nadawania możesz używać klawiszy <kbd>[</kbd> i <kbd>]</kbd> jako dwóch wejść manipulatora.",
+        quickKey: "<strong>Fizyczny klucz nie jest potrzebny.</strong> Do nadawania możesz używać klawiszy <kbd>[</kbd> i <kbd>]</kbd>.",
         quickCheatSheet: "Po prawej stronie ekranu, pod przyciskiem <kbd>?</kbd>, możesz włączyć lub wyłączyć wbudowaną ściągę z alfabetu Morse'a.",
-        quickAudioCue: "Naciśnij dowolny znak na klawiaturze, aby usłyszeć jego <strong>podpowiedź CW</strong> — krótką dźwiękową wskazówkę z kodem Morse'a dla wybranego znaku.",
+        quickAudioCue: "Naciśnij znak na klawiaturze aby usłyszeć jak powinien zabrzmieć.",
         lastThingTitle: "Na koniec",
-        lastThingText: "To jeszcze nie jest oficjalne wydanie DitTrail. Ta strona służy do wygodnego udostępniania aktualnej wersji i pokazywania kilku ciekawskim operatorom, w jakim kierunku rozwija się projekt.",
+        lastThingText: "Ta strona służy do wygodnego udostępniania aktualnej wersji i pokazywania kilku ciekawskim operatorom, w jakim kierunku rozwija się projekt.",
         backLink: "← Powrót do dittrail.com"
     }
 };
