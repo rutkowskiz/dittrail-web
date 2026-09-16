@@ -10,76 +10,83 @@
 
     <link rel="icon" type="image/png" href="../assets/dittrail-icon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="language.js" defer></script>
 </head>
 <body>
     <main class="page-shell">
         <header class="demo-hero">
-            <a class="brand-link" href="/" aria-label="Back to DitTrail home">
+            <div class="language-switcher" role="group" aria-label="Language">
+                <button class="language-button" type="button" data-language="en" aria-label="English" title="English">🇬🇧</button>
+                <button class="language-button" type="button" data-language="pl" aria-label="Polski" title="Polski">🇵🇱</button>
+            </div>
+
+            <a class="brand-link" href="/" aria-label="Back to DitTrail home" data-i18n-aria="backHomeAria">
                 <img class="dittrail-symbol" src="../assets/dittrail-symbol.png" alt="">
                 <div class="brand">
                     <span class="brand-dit">Dit</span><span class="brand-trail">Trail</span>
                 </div>
             </a>
 
-            <p class="eyebrow">EARLY DEVELOPMENT PREVIEW</p>
+            <p class="eyebrow" data-i18n="eyebrow">EARLY DEVELOPMENT PREVIEW</p>
             <h1>DitTrail Demo</h1>
-            <p class="lead">
+            <p class="lead" data-i18n="lead">
                 This is a very early build shared with friends and testers while DitTrail is still taking shape.
                 Expect unfinished areas, changing behaviour and the occasional rough edge.
             </p>
 
             <div class="current-state">
-                <span class="state-label">WHAT WORKS RIGHT NOW</span>
+                <span class="state-label" data-i18n="stateLabel">WHAT WORKS RIGHT NOW</span>
                 <strong>Practice · Settings</strong>
-                <p>At this stage only the Practice and Settings sections are functional. The rest is still under construction.</p>
+                <p data-i18n="stateText">At this stage only the Practice and Settings sections are functional. The rest is still under construction.</p>
             </div>
 
             <a class="download-button"
-               href="https://github.com/rutkowskiz/dittrail-web/releases/download/demo/DitTrailPublish.zip">
+               href="https://github.com/rutkowskiz/dittrail-web/releases/download/demo/DitTrailPublish.zip"
+               data-i18n="downloadButton">
                 Download DitTrail Demo
             </a>
             <p class="file-name">DitTrailPublish.zip</p>
         </header>
 
-        <section class="info-grid" aria-label="Demo information">
+        <section class="info-grid" aria-label="Demo information" data-i18n-aria="demoInfoAria">
             <article class="info-card">
                 <span class="card-number">01</span>
-                <h2>Requirements</h2>
-                <p><strong>Windows 10 or Windows 11</strong> is required.</p>
-                <p><strong>Full HD (1920 × 1080)</strong> is recommended. Smaller resolutions may scale incorrectly in this early build — no promises there yet. 🙂</p>
+                <h2 data-i18n="requirementsTitle">Requirements</h2>
+                <p data-i18n-html="requirementsWindows"><strong>Windows 10 or Windows 11</strong> is required.</p>
+                <p data-i18n-html="requirementsResolution"><strong>Full HD (1920 × 1080)</strong> is recommended. Smaller resolutions may scale incorrectly in this early build — no promises there yet. 🙂</p>
             </article>
 
             <article class="info-card">
                 <span class="card-number">02</span>
-                <h2>Installation</h2>
+                <h2 data-i18n="installationTitle">Installation</h2>
                 <ol>
-                    <li>Download <strong>DitTrailPublish.zip</strong>.</li>
-                    <li>Extract the entire ZIP archive to any folder on your PC.</li>
-                    <li>Open that folder and run the included <strong>.exe</strong> file.</li>
+                    <li data-i18n-html="installation1">Download <strong>DitTrailPublish.zip</strong>.</li>
+                    <li data-i18n-html="installation2">Extract the entire ZIP archive to any folder on your PC.</li>
+                    <li data-i18n-html="installation3">Open that folder and run the included <strong>.exe</strong> file.</li>
                 </ol>
             </article>
 
             <article class="info-card wide-card">
                 <span class="card-number">03</span>
-                <h2>Quick start</h2>
+                <h2 data-i18n="quickStartTitle">Quick start</h2>
                 <div class="quick-list">
-                    <p><strong>No physical key is required.</strong> You can use the <kbd>[</kbd> and <kbd>]</kbd> keys as the two paddle inputs.</p>
-                    <p>On the right side of the screen, use the <kbd>?</kbd> button to show or hide the built-in Morse alphabet cheat sheet.</p>
-                    <p>Press a character key on your keyboard to hear its <strong>CW audio cue</strong> — a quick sound hint for the selected Morse character.</p>
+                    <p data-i18n-html="quickKey"><strong>No physical key is required.</strong> You can use the <kbd>[</kbd> and <kbd>]</kbd> keys as the two paddle inputs.</p>
+                    <p data-i18n-html="quickCheatSheet">On the right side of the screen, use the <kbd>?</kbd> button to show or hide the built-in Morse alphabet cheat sheet.</p>
+                    <p data-i18n-html="quickAudioCue">Press a character key on your keyboard to hear its <strong>CW audio cue</strong> — a quick sound hint for the selected Morse character.</p>
                 </div>
             </article>
         </section>
 
         <section class="preview-note">
-            <h2>One last thing</h2>
-            <p>
+            <h2 data-i18n="lastThingTitle">One last thing</h2>
+            <p data-i18n="lastThingText">
                 This is not an official DitTrail release yet. It is simply a convenient way to share the current build,
                 gather feedback and let a few curious operators see where the project is heading.
             </p>
         </section>
 
         <footer>
-            <a href="/">← Back to dittrail.com</a>
+            <a href="/" data-i18n="backLink">← Back to dittrail.com</a>
             <span>© 2026 DitTrail · by SP9ZR</span>
         </footer>
     </main>
