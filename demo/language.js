@@ -20,7 +20,7 @@ const translations = {
         installation3: "Open that folder and run the included <strong>.exe</strong> file.",
         quickStartTitle: "Quick start",
         quickKey: "<strong>No physical key is required.</strong> You can use the <kbd>[</kbd> and <kbd>]</kbd> keys as the two paddle inputs.",
-        quickCheatSheet: "On the right side of the screen, use the <kbd>?</kbd> button to show or hide the built-in Morse alphabet cheat sheet.</li>",
+        quickCheatSheet: "On the right side of the screen, use the <kbd>?</kbd> button to show or hide the built-in Morse alphabet cheat sheet.",
         quickAudioCue: "Press a character key on your keyboard to hear its <strong>CW audio cue</strong> — a quick sound hint for the selected Morse character.",
         lastThingTitle: "One last thing",
         lastThingText: "This is not an official DitTrail release yet. It is simply a convenient way to share the current build, gather feedback and let a few curious operators see where the project is heading.",
