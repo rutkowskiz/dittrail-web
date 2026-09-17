@@ -58,9 +58,18 @@
                data-i18n="downloadButton">
                 Download DitTrail Demo
             </a>
-            <div class="version-badge">
-                <span data-i18n="currentVersionLabel">CURRENT VERSION</span>
-                <strong>v0.2</strong>
+            <div class="download-details">
+                <div class="version-badge">
+                    <span data-i18n="currentVersionLabel">CURRENT VERSION</span>
+                    <strong>v0.2</strong>
+                </div>
+                <div class="download-count-badge" id="download-count" hidden aria-live="polite">
+                    <svg class="download-count-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M12 3v10m0 0 4-4m-4 4-4-4M5 17v2h14v-2"/>
+                    </svg>
+                    <strong id="download-count-value"></strong>
+                    <span id="download-count-label"></span>
+                </div>
             </div>
             <p class="file-name">DitTrailPublish.zip</p>
         </header>
