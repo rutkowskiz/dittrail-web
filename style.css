@@ -265,6 +265,11 @@ body {
     stroke-linejoin: round;
 }
 
+.feature:first-child .feature-icon svg,
+.feature:last-child .feature-icon svg {
+    stroke-width: 2.2;
+}
+
 .feature h2 {
     margin: 0;
 
