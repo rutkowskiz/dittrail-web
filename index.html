@@ -12,10 +12,29 @@
 
     <link rel="icon" type="image/png" href="assets/dittrail-icon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="language.js" defer></script>
     <script src="demo-access.js" defer></script>
 </head>
 
 <body>
+
+    <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria="languageAria">
+        <button class="language-button" type="button" data-language="en" aria-label="English" title="English">
+            <svg class="language-flag" viewBox="0 0 60 30" role="img" aria-hidden="true" focusable="false">
+                <rect width="60" height="30" fill="#012169"/>
+                <path d="M0 0 L60 30 M60 0 L0 30" stroke="#FFFFFF" stroke-width="6"/>
+                <path d="M0 0 L60 30 M60 0 L0 30" stroke="#C8102E" stroke-width="3.4"/>
+                <path d="M30 0 V30 M0 15 H60" stroke="#FFFFFF" stroke-width="10"/>
+                <path d="M30 0 V30 M0 15 H60" stroke="#C8102E" stroke-width="6"/>
+            </svg>
+        </button>
+        <button class="language-button" type="button" data-language="pl" aria-label="Polski" title="Polski">
+            <svg class="language-flag" viewBox="0 0 60 30" role="img" aria-hidden="true" focusable="false">
+                <rect width="60" height="15" y="0" fill="#FFFFFF"/>
+                <rect width="60" height="15" y="15" fill="#DC143C"/>
+            </svg>
+        </button>
+    </div>
 
     <main>
 
@@ -33,21 +52,21 @@
                     <span class="brand-dit">Dit</span><span class="brand-trail">Trail</span>
                 </h1>
 
-                <p class="tagline">
+                <p class="tagline" data-i18n="tagline">
                     YOUR PATH TO CW
                 </p>
 
-                <p class="journey">
+                <p class="journey" data-i18n="journey">
                     From first dit to first QSO
                 </p>
 
-                <p class="description">
+                <p class="description" data-i18n="description">
                     A modern desktop application designed to guide you
                     step by step from learning your first Morse characters
                     to confident CW operation.
                 </p>
 
-                <div class="status">
+                <div class="status" data-i18n="status">
                     In development
                 </div>
 
@@ -65,9 +84,9 @@
                     · —
                 </div>
 
-                <h2>Learn</h2>
+                <h2 data-i18n="learnTitle">Learn</h2>
 
-                <p>
+                <p data-i18n="learnText">
                     Build your CW skills progressively,
                     with a clear path from the very beginning.
                 </p>
@@ -81,9 +100,9 @@
                     )))
                 </div>
 
-                <h2>Listen</h2>
+                <h2 data-i18n="listenTitle">Listen</h2>
 
-                <p>
+                <p data-i18n="listenText">
                     Train your ear to recognize Morse
                     naturally and confidently.
                 </p>
@@ -97,9 +116,9 @@
                     ─·
                 </div>
 
-                <h2>Key</h2>
+                <h2 data-i18n="keyTitle">Key</h2>
 
-                <p>
+                <p data-i18n="keyText">
                     Practice sending and develop
                     accurate timing and rhythm.
                 </p>
@@ -125,7 +144,7 @@
             </a>
 
             <div class="creator-text">
-                <span>Created by</span>
+                <span data-i18n="createdBy">Created by</span>
                 <strong>SP9ZR</strong>
             </div>
 
@@ -135,7 +154,7 @@
 
 
     <footer>
-        <p>
+        <p data-i18n="footerText">
             © 2026 DitTrail · CW learning software
         </p>
     </footer>

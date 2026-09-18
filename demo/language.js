@@ -1,5 +1,6 @@
 const translations = {
     en: {
+        languageAria: "Language",
         backHomeAria: "Back to DitTrail home",
         eyebrow: "EARLY DEVELOPMENT PREVIEW",
         lead: "This is a very early build shared with friends and testers while DitTrail is still taking shape. Expect unfinished areas, changing behaviour and the occasional rough edge.",
@@ -27,6 +28,7 @@ const translations = {
         backLink: "← Back to dittrail.com"
     },
     pl: {
+        languageAria: "Język",
         backHomeAria: "Powrót na stronę główną DitTrail",
         eyebrow: "WCZESNA WERSJA ROZWOJOWA",
         lead: "To bardzo wczesna wersja DitTrail, udostępniona znajomym i testerom jeszcze w trakcie rozwoju programu. Część elementów jest niedokończona, zachowanie aplikacji może się zmieniać, a od czasu do czasu może trafić się coś niedopracowanego.",
@@ -56,7 +58,8 @@ const translations = {
     }
 };
 
-const LANGUAGE_KEY = "dittrail-demo-language";
+const LANGUAGE_KEY = "dittrail-language";
+const LEGACY_LANGUAGE_KEY = "dittrail-demo-language";
 const DOWNLOAD_COUNT_API = "https://api.github.com/repos/rutkowskiz/dittrail-web/releases/tags/demo";
 const DOWNLOAD_ASSET_NAME = "DitTrailPublish.zip";
 let currentDownloadCount = null;
@@ -167,7 +170,9 @@ function applyLanguage(language) {
 }
 
 function initialiseLanguageSwitcher() {
-    const savedLanguage = localStorage.getItem(LANGUAGE_KEY);
+    const savedLanguage =
+        localStorage.getItem(LANGUAGE_KEY) ||
+        localStorage.getItem(LEGACY_LANGUAGE_KEY);
     const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("pl") ? "pl" : "en";
     const initialLanguage = savedLanguage || browserLanguage;
 

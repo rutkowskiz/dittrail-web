@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --site-width: 1080px;
+    --site-gutter: 48px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -21,21 +26,77 @@ body {
 
 
 /* =========================
+   LANGUAGE SWITCHER
+   ========================= */
+
+.language-switcher {
+    position: fixed;
+    top: 24px;
+    right: 28px;
+    z-index: 100;
+    display: flex;
+    gap: 10px;
+}
+
+.language-button {
+    width: 44px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid rgba(104, 189, 235, 0.16);
+    border-radius: 10px;
+    background: rgba(10, 28, 44, 0.72);
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.66;
+    backdrop-filter: blur(10px);
+    transition: opacity 0.18s ease, transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.language-button:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+    border-color: rgba(102, 218, 255, 0.46);
+}
+
+.language-button.active {
+    opacity: 1;
+    border-color: rgba(83, 205, 255, 0.62);
+    background: rgba(25, 92, 133, 0.52);
+    box-shadow: 0 0 18px rgba(0, 157, 255, 0.08);
+}
+
+.language-flag {
+    width: 28px;
+    height: 14px;
+    display: block;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+
+/* =========================
    HERO
    ========================= */
 
 .hero {
+    width: min(var(--site-width), calc(100% - var(--site-gutter)));
     min-height: 100vh;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    padding: 70px 24px 50px;
+    padding: 70px 0 50px;
     text-align: center;
 }
 
 .hero-content {
-    width: min(820px, 100%);
+    width: 100%;
+    max-width: 820px;
+    margin: 0 auto;
 }
 
 .dittrail-symbol {
@@ -136,7 +197,7 @@ body {
    ========================= */
 
 .features {
-    width: min(1080px, calc(100% - 48px));
+    width: min(var(--site-width), calc(100% - var(--site-gutter)));
 
     margin: 0 auto;
     padding: 55px 0 110px;
@@ -220,7 +281,7 @@ body {
    ========================= */
 
 .creator {
-    width: min(720px, calc(100% - 48px));
+    width: min(var(--site-width), calc(100% - var(--site-gutter)));
 
     margin: 0 auto 90px;
     padding-top: 70px;
@@ -315,6 +376,17 @@ footer p {
    ========================= */
 
 @media (max-width: 760px) {
+
+    .language-switcher {
+        top: 16px;
+        right: 16px;
+        gap: 8px;
+    }
+
+    .language-button {
+        width: 40px;
+        height: 32px;
+    }
 
     .hero {
         min-height: auto;
