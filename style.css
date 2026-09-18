@@ -388,12 +388,17 @@ footer p {
     .language-switcher {
         top: 16px;
         right: 16px;
-        gap: 8px;
+        gap: 6px;
     }
 
     .language-button {
-        width: 40px;
-        height: 32px;
+        width: 36px;
+        height: 30px;
+    }
+
+    .language-flag {
+        width: 24px;
+        height: 12px;
     }
 
     .hero {

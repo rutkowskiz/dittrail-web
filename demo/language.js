@@ -1,6 +1,8 @@
 const translations = {
     en: {
         languageAria: "Language",
+        pageTitle: "DitTrail Demo — Early Development Preview",
+        metaDescription: "DitTrail early development demo for friends and testers.",
         backHomeAria: "Back to DitTrail home",
         eyebrow: "EARLY DEVELOPMENT PREVIEW",
         lead: "This is a very early build shared with friends and testers while DitTrail is still taking shape. Expect unfinished areas, changing behaviour and the occasional rough edge.",
@@ -9,8 +11,8 @@ const translations = {
         stateText: "At this stage only the Practice and Settings sections are functional. The rest is still under construction.",
         downloadButton: "Download DitTrail Demo",
         currentVersionLabel: "CURRENT VERSION",
-        downloadSingular: "DOWNLOAD",
-        downloadPlural: "DOWNLOADS",
+        downloadOne: "DOWNLOAD",
+        downloadOther: "DOWNLOADS",
         demoInfoAria: "Demo information",
         requirementsTitle: "Requirements",
         requirementsWindows: "<strong>Windows 10 or Windows 11</strong> is required.",
@@ -29,6 +31,8 @@ const translations = {
     },
     pl: {
         languageAria: "Język",
+        pageTitle: "DitTrail Demo — wczesna wersja rozwojowa",
+        metaDescription: "Wczesna wersja rozwojowa DitTrail dla znajomych i testerów.",
         backHomeAria: "Powrót na stronę główną DitTrail",
         eyebrow: "WCZESNA WERSJA ROZWOJOWA",
         lead: "To bardzo wczesna wersja DitTrail, udostępniona znajomym i testerom jeszcze w trakcie rozwoju programu. Część elementów jest niedokończona, zachowanie aplikacji może się zmieniać, a od czasu do czasu może trafić się coś niedopracowanego.",
@@ -55,6 +59,126 @@ const translations = {
         lastThingTitle: "Na koniec",
         lastThingText: "To jeszcze nie jest oficjalne wydanie DitTrail. Ta strona służy do udostępniania aktualnej wersji i pokazywania kilku ciekawskim operatorom w jakim kierunku rozwija się projekt.",
         backLink: "← Powrót do dittrail.com"
+    },
+    de: {
+        languageAria: "Sprache",
+        pageTitle: "DitTrail Demo — frühe Entwicklungsversion",
+        metaDescription: "Frühe DitTrail-Entwicklungsversion für Freunde und Tester.",
+        backHomeAria: "Zurück zur DitTrail-Startseite",
+        eyebrow: "FRÜHE ENTWICKLUNGSVERSION",
+        lead: "Dies ist eine sehr frühe DitTrail-Version für Freunde und Tester, während die Anwendung noch entsteht. Unfertige Bereiche, Änderungen und kleinere Ecken und Kanten sind zu erwarten.",
+        stateLabel: "WAS BEREITS FUNKTIONIERT",
+        stateSections: "Practice · Settings",
+        stateText: "Derzeit funktionieren nur die Bereiche Practice und Settings. Der Rest der Anwendung befindet sich noch im Aufbau.",
+        downloadButton: "DitTrail Demo herunterladen",
+        currentVersionLabel: "AKTUELLE VERSION",
+        downloadOne: "DOWNLOAD",
+        downloadOther: "DOWNLOADS",
+        demoInfoAria: "Informationen zur Demo",
+        requirementsTitle: "Voraussetzungen",
+        requirementsWindows: "<strong>Windows 10 oder Windows 11</strong> ist erforderlich.",
+        requirementsResolution: "<strong>Full HD (1920 × 1080)</strong> wird empfohlen. Bei kleineren Auflösungen kann diese frühe Version noch falsch skalieren — ohne Gewähr. 🙂",
+        installationTitle: "Installation",
+        installation1: "<strong>DitTrailPublish.zip</strong> herunterladen.",
+        installation2: "Das gesamte ZIP-Archiv in einen beliebigen Ordner entpacken.",
+        installation3: "Den entpackten Ordner öffnen und die enthaltene <strong>.exe</strong>-Datei starten.",
+        quickStartTitle: "Schnellstart",
+        quickKey: "<strong>Eine physische Morsetaste ist nicht erforderlich.</strong> Die Tasten <kbd>[</kbd> und <kbd>]</kbd> können als Paddle-Eingänge verwendet werden.",
+        quickCheatSheet: "Mit der Taste <kbd>?</kbd> rechts im Fenster lässt sich die Morse-Übersicht ein- oder ausblenden.",
+        quickAudioCue: "Drücke eine Zeichentaste, um den <strong>CW-Klang</strong> des Morsezeichens zu hören.",
+        lastThingTitle: "Zum Schluss",
+        lastThingText: "Dies ist noch keine offizielle DitTrail-Version. Die Seite dient dazu, den aktuellen Stand zu teilen und einigen neugierigen Funkamateuren zu zeigen, wohin sich das Projekt entwickelt.",
+        backLink: "← Zurück zu dittrail.com"
+    },
+    it: {
+        languageAria: "Lingua",
+        pageTitle: "DitTrail Demo — versione iniziale di sviluppo",
+        metaDescription: "Versione iniziale di sviluppo di DitTrail per amici e tester.",
+        backHomeAria: "Torna alla home di DitTrail",
+        eyebrow: "VERSIONE INIZIALE DI SVILUPPO",
+        lead: "Questa è una versione molto iniziale di DitTrail, condivisa con amici e tester mentre il progetto è ancora in sviluppo. Alcune parti sono incomplete e il comportamento può ancora cambiare.",
+        stateLabel: "COSA FUNZIONA ORA",
+        stateSections: "Practice · Settings",
+        stateText: "In questa fase funzionano solo le sezioni Practice e Settings. Il resto dell’applicazione è ancora in costruzione.",
+        downloadButton: "Scarica DitTrail Demo",
+        currentVersionLabel: "VERSIONE ATTUALE",
+        downloadOne: "DOWNLOAD",
+        downloadOther: "DOWNLOAD",
+        demoInfoAria: "Informazioni sulla demo",
+        requirementsTitle: "Requisiti",
+        requirementsWindows: "È richiesto <strong>Windows 10 o Windows 11</strong>.",
+        requirementsResolution: "È consigliato <strong>Full HD (1920 × 1080)</strong>. Con risoluzioni inferiori questa versione iniziale può scalare male — nessuna promessa, per ora. 🙂",
+        installationTitle: "Installazione",
+        installation1: "Scarica <strong>DitTrailPublish.zip</strong>.",
+        installation2: "Estrai l’intero archivio ZIP in una cartella qualsiasi.",
+        installation3: "Apri la cartella estratta e avvia il file <strong>.exe</strong> incluso.",
+        quickStartTitle: "Avvio rapido",
+        quickKey: "<strong>Non serve un tasto telegrafico fisico.</strong> Puoi usare <kbd>[</kbd> e <kbd>]</kbd> come due ingressi paddle.",
+        quickCheatSheet: "Sul lato destro, usa il pulsante <kbd>?</kbd> per mostrare o nascondere il riferimento Morse.",
+        quickAudioCue: "Premi un carattere sulla tastiera per ascoltare il suo <strong>suono CW</strong>.",
+        lastThingTitle: "Un’ultima cosa",
+        lastThingText: "Questa non è ancora una release ufficiale di DitTrail. La pagina serve a condividere la versione attuale e mostrare ad alcuni radioamatori curiosi la direzione del progetto.",
+        backLink: "← Torna a dittrail.com"
+    },
+    cs: {
+        languageAria: "Jazyk",
+        pageTitle: "DitTrail Demo — raná vývojová verze",
+        metaDescription: "Raná vývojová verze DitTrail pro přátele a testery.",
+        backHomeAria: "Zpět na domovskou stránku DitTrail",
+        eyebrow: "RANÁ VÝVOJOVÁ VERZE",
+        lead: "Toto je velmi raná verze DitTrail sdílená s přáteli a testery během vývoje. Některé části nejsou hotové, chování se může měnit a občas se objeví něco nedotaženého.",
+        stateLabel: "CO UŽ FUNGUJE",
+        stateSections: "Practice · Settings",
+        stateText: "V této fázi fungují pouze sekce Practice a Settings. Zbytek aplikace je stále ve vývoji.",
+        downloadButton: "Stáhnout DitTrail Demo",
+        currentVersionLabel: "AKTUÁLNÍ VERZE",
+        downloadOne: "STAŽENÍ",
+        downloadOther: "STAŽENÍ",
+        demoInfoAria: "Informace o demu",
+        requirementsTitle: "Požadavky",
+        requirementsWindows: "Je vyžadován <strong>Windows 10 nebo Windows 11</strong>.",
+        requirementsResolution: "Doporučeno je <strong>Full HD (1920 × 1080)</strong>. Při nižším rozlišení se tato raná verze může škálovat nesprávně — zatím bez záruky. 🙂",
+        installationTitle: "Instalace",
+        installation1: "Stáhni <strong>DitTrailPublish.zip</strong>.",
+        installation2: "Rozbal celý ZIP archiv do libovolné složky.",
+        installation3: "Otevři rozbalenou složku a spusť přiložený soubor <strong>.exe</strong>.",
+        quickStartTitle: "Rychlý start",
+        quickKey: "<strong>Fyzický telegrafní klíč není potřeba.</strong> Klávesy <kbd>[</kbd> a <kbd>]</kbd> můžeš použít jako dva vstupy pádel.",
+        quickCheatSheet: "Vpravo použij tlačítko <kbd>?</kbd> k zobrazení nebo skrytí Morseovy nápovědy.",
+        quickAudioCue: "Stiskni znak na klávesnici a uslyšíš jeho <strong>CW zvuk</strong>.",
+        lastThingTitle: "Na závěr",
+        lastThingText: "Toto ještě není oficiální vydání DitTrail. Stránka slouží ke sdílení aktuální verze a k ukázce několika zvědavým radioamatérům, kam projekt směřuje.",
+        backLink: "← Zpět na dittrail.com"
+    },
+    es: {
+        languageAria: "Idioma",
+        pageTitle: "DitTrail Demo — versión inicial de desarrollo",
+        metaDescription: "Versión inicial de desarrollo de DitTrail para amigos y probadores.",
+        backHomeAria: "Volver a la página principal de DitTrail",
+        eyebrow: "VERSIÓN INICIAL DE DESARROLLO",
+        lead: "Esta es una versión muy temprana de DitTrail, compartida con amigos y probadores mientras la aplicación sigue tomando forma. Hay partes sin terminar y el comportamiento todavía puede cambiar.",
+        stateLabel: "LO QUE YA FUNCIONA",
+        stateSections: "Practice · Settings",
+        stateText: "Por ahora solo funcionan las secciones Practice y Settings. El resto de la aplicación sigue en construcción.",
+        downloadButton: "Descargar DitTrail Demo",
+        currentVersionLabel: "VERSIÓN ACTUAL",
+        downloadOne: "DESCARGA",
+        downloadOther: "DESCARGAS",
+        demoInfoAria: "Información de la demo",
+        requirementsTitle: "Requisitos",
+        requirementsWindows: "Se requiere <strong>Windows 10 o Windows 11</strong>.",
+        requirementsResolution: "Se recomienda <strong>Full HD (1920 × 1080)</strong>. Con resoluciones menores esta versión temprana puede escalar de forma incorrecta — sin promesas por ahora. 🙂",
+        installationTitle: "Instalación",
+        installation1: "Descarga <strong>DitTrailPublish.zip</strong>.",
+        installation2: "Extrae todo el archivo ZIP en cualquier carpeta.",
+        installation3: "Abre la carpeta extraída y ejecuta el archivo <strong>.exe</strong> incluido.",
+        quickStartTitle: "Inicio rápido",
+        quickKey: "<strong>No necesitas un manipulador telegráfico físico.</strong> Puedes usar <kbd>[</kbd> y <kbd>]</kbd> como las dos entradas del paddle.",
+        quickCheatSheet: "A la derecha, usa el botón <kbd>?</kbd> para mostrar u ocultar la referencia Morse.",
+        quickAudioCue: "Pulsa un carácter en el teclado para escuchar su <strong>sonido CW</strong>.",
+        lastThingTitle: "Una última cosa",
+        lastThingText: "Esta todavía no es una versión oficial de DitTrail. La página sirve para compartir la versión actual y mostrar a algunos radioaficionados curiosos hacia dónde avanza el proyecto.",
+        backLink: "← Volver a dittrail.com"
     }
 };
 
@@ -79,6 +203,15 @@ function getPolishDownloadLabel(count) {
     return translations.pl.downloadMany;
 }
 
+function getDownloadLabel(language, count) {
+    if (language === "pl") {
+        return getPolishDownloadLabel(count);
+    }
+
+    const dictionary = translations[language] || translations.en;
+    return count === 1 ? dictionary.downloadOne : dictionary.downloadOther;
+}
+
 function updateDownloadCountText() {
     if (!Number.isInteger(currentDownloadCount) || currentDownloadCount < 0) {
         return;
@@ -92,12 +225,12 @@ function updateDownloadCountText() {
         return;
     }
 
-    const language = document.documentElement.lang === "pl" ? "pl" : "en";
-    value.textContent = String(currentDownloadCount);
-    label.textContent = language === "pl"
-        ? getPolishDownloadLabel(currentDownloadCount)
-        : (currentDownloadCount === 1 ? translations.en.downloadSingular : translations.en.downloadPlural);
+    const language = translations[document.documentElement.lang]
+        ? document.documentElement.lang
+        : "en";
 
+    value.textContent = String(currentDownloadCount);
+    label.textContent = getDownloadLabel(language, currentDownloadCount);
     badge.hidden = false;
 }
 
@@ -134,9 +267,12 @@ function applyLanguage(language) {
     const dictionary = translations[selected];
 
     document.documentElement.lang = selected;
-    document.title = selected === "pl"
-        ? "DitTrail Demo — wczesna wersja rozwojowa"
-        : "DitTrail Demo — Early Development Preview";
+    document.title = dictionary.pageTitle;
+
+    const description = document.querySelector('meta[name="description"]');
+    if (description) {
+        description.setAttribute("content", dictionary.metaDescription);
+    }
 
     document.querySelectorAll("[data-i18n]").forEach((element) => {
         const key = element.dataset.i18n;
@@ -169,18 +305,28 @@ function applyLanguage(language) {
     updateDownloadCountText();
 }
 
-function initialiseLanguageSwitcher() {
+function getInitialLanguage() {
     const savedLanguage =
         localStorage.getItem(LANGUAGE_KEY) ||
         localStorage.getItem(LEGACY_LANGUAGE_KEY);
-    const browserLanguage = navigator.language && navigator.language.toLowerCase().startsWith("pl") ? "pl" : "en";
-    const initialLanguage = savedLanguage || browserLanguage;
 
+    if (translations[savedLanguage]) {
+        return savedLanguage;
+    }
+
+    const browserLanguage = (navigator.language || "en")
+        .toLowerCase()
+        .split("-")[0];
+
+    return translations[browserLanguage] ? browserLanguage : "en";
+}
+
+function initialiseLanguageSwitcher() {
     document.querySelectorAll(".language-button").forEach((button) => {
         button.addEventListener("click", () => applyLanguage(button.dataset.language));
     });
 
-    applyLanguage(initialLanguage);
+    applyLanguage(getInitialLanguage());
     loadDownloadCount();
 }
 
