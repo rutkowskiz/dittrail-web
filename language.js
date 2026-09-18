@@ -17,14 +17,14 @@ const translations = {
     pl: {
         languageAria: "Język",
         tagline: "TWOJA DROGA DO CW",
-        journey: "Od pierwszego dit do pierwszego QSO",
+        journey: "od pierwszej 'kropki' do pierwszej łączności",
         description: "Nowoczesna aplikacja desktopowa, która krok po kroku poprowadzi Cię od pierwszych znaków Morse’a do swobodnej pracy CW.",
-        status: "W rozwoju",
+        status: "W przygotowaniu",
         learnTitle: "Ucz się",
-        learnText: "Rozwijaj umiejętności CW stopniowo, jasną drogą od samych podstaw.",
+        learnText: "Ucz się CW krok po kroku i od początku buduj solidne podstawy.",
         listenTitle: "Słuchaj",
         listenText: "Ćwicz słuch, aby rozpoznawać Morse’a naturalnie i pewnie.",
-        keyTitle: "Nadaj",
+        keyTitle: "Nadawaj",
         keyText: "Ćwicz nadawanie i rozwijaj precyzyjny timing oraz rytm.",
         createdBy: "Autor",
         footerText: "© 2026 DitTrail · oprogramowanie do nauki CW"
@@ -48,7 +48,7 @@ function applyLanguage(language) {
         description.setAttribute(
             "content",
             selected === "pl"
-                ? "DitTrail to nowoczesna aplikacja do nauki CW. Od pierwszego dit do pierwszego QSO."
+                ? "DitTrail to nowoczesna aplikacja do nauki CW. Od pierwszej kropki do pierwszej łączności."
                 : "DitTrail is a modern CW learning application. From your first dit to your first QSO."
         );
     }
