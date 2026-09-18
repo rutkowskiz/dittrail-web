@@ -260,14 +260,9 @@ body {
     overflow: visible;
     fill: none;
     stroke: currentColor;
-    stroke-width: 1.8;
+    stroke-width: 1.6;
     stroke-linecap: round;
     stroke-linejoin: round;
-}
-
-.feature:first-child .feature-icon svg,
-.feature:last-child .feature-icon svg {
-    stroke-width: 2.2;
 }
 
 .feature h2 {
