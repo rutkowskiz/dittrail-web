@@ -38,7 +38,7 @@ const translations = {
         lead: "To bardzo wczesna wersja DitTrail, udostępniona znajomym i testerom jeszcze w trakcie rozwoju programu. Część elementów jest niedokończona, zachowanie aplikacji może się zmieniać, a od czasu do czasu może trafić się coś niedopracowanego.",
         stateLabel: "CO DZIAŁA OBECNIE",
         stateSections: "Nauka · Trening · Ustawienia",
-        stateText: "Sekcja Nauka zaczyna już tworzyć prawdziwą ścieżkę szkoleniową. Demo zawiera Pierwszy sygnał, lekcje Nowe znaki — I/M/S i O/A/N, ćwiczenia Sprawdź znaki mieszające cały poznany materiał oraz Słowa w eterze, gdzie pojedyncze znaki zaczynają układać się w krótkie słowa CW. Trening i Ustawienia również działają, a pozostałe części DitTrail wciąż powstają.",
+        stateText: "Sekcja Nauka zaczyna już tworzyć prawdziwą ścieżkę szkoleniową. Demo zawiera PIERWSZY SYGNAŁ, lekcje NOWE ZNAKI — I/M/S i O/A/N, ćwiczenia SPRAWDŹ ZNAKI mieszające cały poznany materiał oraz SŁOWA W ETERZE, gdzie pojedyncze znaki zaczynają układać się w krótkie słowa CW. Trening i Ustawienia również działają, a pozostałe części DitTrail wciąż powstają.",
         downloadButton: "Pobierz DitTrail Demo",
         currentVersionLabel: "AKTUALNA WERSJA",
         downloadOne: "POBRANIE",
