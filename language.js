@@ -13,6 +13,10 @@ const translations = {
         listenText: "Train your ear to recognize Morse naturally and confidently.",
         keyTitle: "Key",
         keyText: "Practice sending and develop accurate timing and rhythm.",
+        youtubeKicker: "DITTRAIL ON VIDEO",
+        youtubeTitle: "See DitTrail in action",
+        youtubeText: "Short demos and development videos from the current DitTrail builds.",
+        youtubeAria: "Open the DitTrail YouTube channel",
         createdBy: "Created by",
         footerText: "© 2026 DitTrail · CW learning software"
     },
@@ -30,6 +34,10 @@ const translations = {
         listenText: "Ćwicz słuch, aby rozpoznawać Morse’a naturalnie i pewnie.",
         keyTitle: "Nadawaj",
         keyText: "Ćwicz nadawanie i rozwijaj precyzyjny timing oraz rytm.",
+        youtubeKicker: "DITTRAIL NA WIDEO",
+        youtubeTitle: "Zobacz DitTrail w działaniu",
+        youtubeText: "Krótkie prezentacje i filmy z kolejnych wersji rozwojowych DitTrail.",
+        youtubeAria: "Otwórz kanał DitTrail na YouTube",
         createdBy: "Autor",
         footerText: "© 2026 DitTrail · oprogramowanie do nauki CW"
     },
@@ -47,6 +55,10 @@ const translations = {
         listenText: "Trainiere dein Gehör, um Morsezeichen natürlich und sicher zu erkennen.",
         keyTitle: "Geben",
         keyText: "Übe das Geben und entwickle präzises Timing und Rhythmus.",
+        youtubeKicker: "DITTRAIL IM VIDEO",
+        youtubeTitle: "DitTrail in Aktion",
+        youtubeText: "Kurze Demos und Entwicklungsvideos aus den aktuellen DitTrail-Versionen.",
+        youtubeAria: "Den DitTrail-YouTube-Kanal öffnen",
         createdBy: "Erstellt von",
         footerText: "© 2026 DitTrail · CW-Lernsoftware"
     },
@@ -64,6 +76,10 @@ const translations = {
         listenText: "Allena l’orecchio a riconoscere il Morse in modo naturale e sicuro.",
         keyTitle: "Trasmetti",
         keyText: "Esercitati nella trasmissione e sviluppa timing e ritmo precisi.",
+        youtubeKicker: "DITTRAIL IN VIDEO",
+        youtubeTitle: "Guarda DitTrail in azione",
+        youtubeText: "Brevi demo e video di sviluppo delle versioni attuali di DitTrail.",
+        youtubeAria: "Apri il canale YouTube di DitTrail",
         createdBy: "Creato da",
         footerText: "© 2026 DitTrail · software per imparare il CW"
     },
@@ -81,6 +97,10 @@ const translations = {
         listenText: "Trénuj sluch, abys Morseovu abecedu rozpoznával přirozeně a jistě.",
         keyTitle: "Vysílej",
         keyText: "Procvičuj vysílání a rozvíjej přesné časování a rytmus.",
+        youtubeKicker: "DITTRAIL NA VIDEU",
+        youtubeTitle: "Podívej se na DitTrail v akci",
+        youtubeText: "Krátké ukázky a vývojová videa z aktuálních verzí DitTrail.",
+        youtubeAria: "Otevřít kanál DitTrail na YouTube",
         createdBy: "Vytvořil",
         footerText: "© 2026 DitTrail · software pro výuku CW"
     },
@@ -98,6 +118,10 @@ const translations = {
         listenText: "Entrena el oído para reconocer el Morse de forma natural y segura.",
         keyTitle: "Transmite",
         keyText: "Practica la transmisión y desarrolla una temporización y un ritmo precisos.",
+        youtubeKicker: "DITTRAIL EN VÍDEO",
+        youtubeTitle: "Mira DitTrail en acción",
+        youtubeText: "Breves demostraciones y vídeos de desarrollo de las versiones actuales de DitTrail.",
+        youtubeAria: "Abrir el canal de DitTrail en YouTube",
         createdBy: "Creado por",
         footerText: "© 2026 DitTrail · software para aprender CW"
     }
