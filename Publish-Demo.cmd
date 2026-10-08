@@ -1,14 +1,14 @@
 @echo off
 setlocal
 
-title DitTrail Demo Publisher
+title DitTrail Beta Publisher
 set "REPO=rutkowskiz/dittrail-web"
 set "TAG=demo"
 set "EXPECTED=DitTrailPublish.zip"
 
 if "%~1"=="" (
     echo.
-    echo DitTrail Demo Publisher
+    echo DitTrail Beta Publisher
     echo -----------------------
     echo Drag %EXPECTED% onto this file to publish it.
     echo.
@@ -54,8 +54,8 @@ echo Publishing %EXPECTED%...
 
 gh release view %TAG% --repo %REPO% >nul 2>&1
 if errorlevel 1 (
-    echo Creating the permanent Demo release...
-    gh release create %TAG% --repo %REPO% --title "DitTrail Demo" --notes "Current early development build for friends and testers." --prerelease
+    echo Creating the permanent Beta release...
+    gh release create %TAG% --repo %REPO% --title "DitTrail Beta" --notes "Current early beta build of DitTrail." --prerelease
     if errorlevel 1 goto :error
 )
 
