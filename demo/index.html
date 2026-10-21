@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DitTrail Beta — v0.11</title>
-    <meta name="description" content="Download DitTrail v0.11, the first fully functional early beta of the CW learning application.">
+    <title>DitTrail v0.13 Beta — Download</title>
+    <meta name="description" content="Download DitTrail v0.13 Beta for Windows and macOS.">
 
     <link rel="icon" type="image/png" href="../assets/dittrail-icon.png">
     <link rel="stylesheet" href="style.css">
@@ -59,34 +59,47 @@
                 </button>
             </div>
 
-            <a class="brand-link" href="/" aria-label="Back to DitTrail home" data-i18n-aria="backHomeAria">
+            <a class="brand-link" href="../index.html" aria-label="Back to DitTrail home" data-i18n-aria="backHomeAria">
                 <img class="dittrail-symbol" src="../assets/dittrail-symbol.png" alt="">
                 <div class="brand">
                     <span class="brand-dit">Dit</span><span class="brand-trail">Trail</span>
                 </div>
             </a>
 
-            <p class="eyebrow" data-i18n="eyebrow">EARLY BETA · v0.11</p>
-            <h1>DitTrail Beta</h1>
+            <p class="eyebrow" data-i18n="eyebrow">DOWNLOAD · v0.13</p>
+            <h1>DitTrail v0.13 Beta</h1>
             <p class="lead" data-i18n="lead">
-                DitTrail v0.11 is the first fully functional beta: the core learning, practice and simulated QSO experience is now available end to end. It is still a very early beta, so bugs and rough edges are possible.
+                Choose the DitTrail v0.13 Beta version for your operating system and download the application.
             </p>
 
-            <div class="current-state">
-                <span class="state-label" data-i18n="stateLabel">WHAT'S IN v0.11</span>
-                <strong data-i18n="stateSections">Learn · Practice · SimQSO · Stats · Home</strong>
-                <p data-i18n="stateText">Learn now covers all 41 supported CW characters. Practice, SimQSO with live radio operation and QSO logging, Stats, profiles, settings, Coach and the built-in Operator Guide are all available.</p>
+            <div class="download-options" role="group" aria-label="DitTrail downloads" data-i18n-aria="downloadOptionsAria">
+                <div class="download-option">
+                    <a class="download-button"
+                       href="https://github.com/rutkowskiz/dittrail-web/releases/download/v0.13-beta/DitTrail-v0.13-windows-x64.exe"
+                       data-i18n="downloadWindows">Download for Windows</a>
+                    <p class="file-name">DitTrail-v0.13-windows-x64.exe</p>
+                </div>
+                <div class="download-option">
+                    <a class="download-button"
+                       href="https://github.com/rutkowskiz/dittrail-web/releases/download/v0.13-beta/DitTrail-v0.13-macos-arm64.dmg"
+                       data-i18n="downloadMacArm">Mac · Apple Silicon</a>
+                    <p class="file-name">DitTrail-v0.13-macos-arm64.dmg</p>
+                </div>
+                <div class="download-option">
+                    <a class="download-button"
+                       href="https://github.com/rutkowskiz/dittrail-web/releases/download/v0.13-beta/DitTrail-v0.13-macos-x64.dmg"
+                       data-i18n="downloadMacIntel">Mac · Intel</a>
+                    <p class="file-name">DitTrail-v0.13-macos-x64.dmg</p>
+                </div>
             </div>
-
-            <a class="download-button"
-               href="https://github.com/rutkowskiz/dittrail-web/releases/download/demo/DitTrailPublish.zip"
-               data-i18n="downloadButton">
-                Download DitTrail v0.11
-            </a>
+            <p class="checksum-link">
+                <a href="https://github.com/rutkowskiz/dittrail-web/releases/download/v0.13-beta/SHA256SUMS.txt"
+                   data-i18n="checksumsLink">SHA-256 checksums</a>
+            </p>
             <div class="download-details">
                 <div class="version-badge">
                     <span data-i18n="currentVersionLabel">CURRENT VERSION</span>
-                    <strong>v0.11</strong>
+                    <strong>v0.13 Beta</strong>
                 </div>
                 <div class="download-count-badge" id="download-count" hidden aria-live="polite">
                     <svg class="download-count-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -96,47 +109,29 @@
                     <span id="download-count-label"></span>
                 </div>
             </div>
-            <p class="file-name">DitTrailPublish.zip</p>
         </header>
 
-        <section class="info-grid" aria-label="Beta information" data-i18n-aria="demoInfoAria">
+        <section class="info-grid" aria-label="Download information" data-i18n-aria="demoInfoAria">
             <article class="info-card">
                 <span class="card-number">01</span>
                 <h2 data-i18n="requirementsTitle">Requirements</h2>
-                <p data-i18n-html="requirementsWindows"><strong>Windows 10 or Windows 11</strong> is required.</p>
-                <p data-i18n-html="requirementsResolution"><strong>Full HD (1920 × 1080)</strong> is recommended. Smaller resolutions may scale incorrectly in this early build — no promises there yet. 🙂</p>
+                <p data-i18n-html="requirementsWindows"><strong>Windows 10 or Windows 11</strong> (x64).</p>
+                <p data-i18n-html="requirementsMac"><strong>macOS</strong> · Apple Silicon or Intel.</p>
+                <p data-i18n-html="requirementsResolution">Recommended screen resolution: <strong>Full HD (1920 × 1080) or higher</strong>.</p>
             </article>
 
             <article class="info-card">
                 <span class="card-number">02</span>
                 <h2 data-i18n="installationTitle">Installation</h2>
-                <ol>
-                    <li data-i18n-html="installation1">Download <strong>DitTrailPublish.zip</strong>.</li>
-                    <li data-i18n-html="installation2">Extract the entire ZIP archive to any folder on your PC.</li>
-                    <li data-i18n-html="installation3">Open that folder and run the included <strong>.exe</strong> file.</li>
-                </ol>
+                <p data-i18n-html="installationWindows"><strong>Windows:</strong> Download the EXE and run it.</p>
+                <p data-i18n-html="installationMac"><strong>macOS:</strong> Open the DMG for your Mac, drag DitTrail.app to Applications and launch it there.</p>
+                <p class="security-note" data-i18n-html="installationSecurity"><strong>Windows security:</strong> The EXE does not have a confirmed Authenticode signature. Windows may display an unknown-publisher warning. You can verify the downloaded file using its SHA-256 checksum.</p>
             </article>
 
-            <article class="info-card wide-card">
-                <span class="card-number">03</span>
-                <h2 data-i18n="quickStartTitle">Quick start</h2>
-                <ul class="quick-list">
-                    <li data-i18n-html="quickKey">On first launch, create your operator profile and let <strong>First Run</strong> guide you through the basic setup.</li>
-                    <li data-i18n-html="quickCheatSheet">For the best experience, use a <strong>real straight key or paddles</strong>. Keyboard keying is also available with <kbd>[</kbd> and <kbd>]</kbd>.</li>
-                    <li data-i18n-html="quickAudioCue">If you get lost, open the built-in <strong>Operator Guide</strong> for an overview of the current features and controls.</li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="preview-note">
-            <h2 data-i18n="lastThingTitle">About this beta</h2>
-            <p data-i18n="lastThingText">
-                v0.11 is an early beta, not a final release. It is ready to be used as a complete application, but bugs may still occur and parts of the interface or behaviour may change. Feedback is very welcome.
-            </p>
         </section>
 
         <footer>
-            <a href="/" data-i18n="backLink">← Back to dittrail.com</a>
+            <a href="../index.html" data-i18n="backLink">← Back to dittrail.com</a>
             <span>© 2026 DitTrail · by SP9ZR</span>
         </footer>
     </main>

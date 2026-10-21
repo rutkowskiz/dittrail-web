@@ -10,7 +10,7 @@
         buffer = (buffer + event.key.toLowerCase()).slice(-secret.length);
 
         if (buffer === secret) {
-            window.location.assign("/demo/");
+            window.location.assign("demo/index.html");
         }
     });
 })();
